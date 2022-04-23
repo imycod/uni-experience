@@ -1,0 +1,66 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"preloadRule": {
+		"pages/index/index": {
+			"packages": ["subpackages/V230"],
+			"network": "all"
+		}
+	},
+	"subPackages": [{
+		"root": "subpackages",
+		"pages": [{
+			"path": "V230/guide/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#000000",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/images/tabbar/home-dark.png",
+				"selectedIconPath": "static/images/tabbar/home-light.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/learn/index",
+				"iconPath": "static/images/tabbar/learn-dark.png",
+				"selectedIconPath": "static/images/tabbar/learn-light.png",
+				"text": "学习"
+			},
+			{
+				"pagePath": "pages/message/index",
+				"iconPath": "static/images/tabbar/message-dark.png",
+				"selectedIconPath": "static/images/tabbar/message-light.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/images/tabbar/user-dark.png",
+				"selectedIconPath": "static/images/tabbar/user-light.png",
+				"text": "我的"
+			}
+		]
+	}
+}
